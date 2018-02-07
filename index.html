@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<title>IRG for Undergrad Nukes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="eag_stylesheet.txt">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url('bobafett_stormtrooper_black.jpg');
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-color: black;
+    min-height: 400px;
+}
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: gray;
+    padding: 7px 12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+ .dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    </a>
+    <a href="#home" class="bar-item button"><i class="fa fa-home"></i>HOME</a>
+    <a href="#contents" class="bar-item button hide-small"><i class="fa fa-th"></i> Table of Contents</a>
+    <a href="#about" class="bar-item button hide-small"><i class="fa fa-adn"></i> About Guide</a>
+	 <div class="dropdown">
+	 <i class="fa fa-bars"></i>
+    <button class="dropbtn">Resources 
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h4>Convenient Information</h4>
+          <a href="resource1.html">PSU MNE Website</a>
+          <a href="resource2.html">ANS</a>
+        </div>
+        <div class="column">
+          <h4>Homework Help</h4>
+          <a href="resource3.html">Engineering Toolbox</a>
+          <a href="resource4.html">Chegg</a>
+        </div>
+        <div class="column">
+          <h4>Other Resources</h4>
+          <a href="resource5.html">Nukeworker.com</a>
+          <a href="resource6.html">Nuclearstreet.com</a>
+          <a href="resource7.html">Journal</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+  </div>
+
+ <!-- 
+	Navbar on small screens 
+    <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+    <a href="#contents" class="bar-item button" onclick="toggleFunction()">Table of Contents</a>
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">About This Guide</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="bar-item button">SEARCH</a>
+    </div> 
+  -->
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center black xlarge wide animate-opacity">Internet Resource Guide <br><span class="hide-small">For</span><br> Undergraduate Nuclear Engineers</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="content container padding-64" id="contents">
+  <h3 class="center">Table of Contents</h3>
+	<ul>
+	<li><a href="#about">About this Guide</a></li>
+		<ul>
+			<li><a href="#content">Content</a></li>
+			<li><a href="#audience">Audience</a></li>
+			<li><a href="#known">What should be known</a></li>
+			<li><a href="#organization">Organization</a></li>
+			<li><a href="#tips">User Tips</a></li>
+		</ul>
+	<li>Resource Abstracts</li>
+		<ul>
+			<li>Convenient Information</li>
+				<ul>
+					<li><a href="resource1.html">Penn State Mechanical and Nuclear Engineering Department</a></li>
+					<li><a href="resource2.html">American Nuclear Society</a></li>
+				</ul>
+			<li>Homework Help</li>
+				<ul>
+					<li><a href="resource3.html">Engineering Toolbox</a></li>
+					<li><a href="resource4.html">Chegg</a></li>
+				</ul>
+			<li>Other Resources</li>
+				<ul>
+					<li><a href="resource5.html">Nukeworker.com</a></li>
+					<li><a href="resource6.html">Nuclearstreet.com</a></li>
+					<li><a href="resource7.html">Journal</a></li>
+				</ul>
+		</ul>
+	</ul>
+</div>
+
+<div class="row center dark-grey padding-16">
+ 
+</div>
+
+<!-- Second Parallax Image with About Text -->
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">About this Guide</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="content container padding-64" id="about">
+  <h3 class="center" id="content">Content</h3>
+  <p>In this guide there are resources to help students in nuclear engineering for their present and future endeavors. There are three sections to website.  The first outlines the professional sites in nuclear engineering.  The second looks at websites that can help students with homework.  The third section adds a ..journal, forum page for nukes, and news about the industry.  For each resource there is a simple summary of what each website is for and how to use it easily.  </p>
+  <h3 class="center" id="audience">Audience</h3>
+  <p>This internet resource guide is intended for undergraduate students in Nuclear Engineering at The Pennsylvania State University.  Students in their first two years may not find the information as appealing, but there is enough to understand the nuclear field and get help if needed.  Students in their final two years most likely know about the professional sites and homework help; however, the other resources can help keep in touch with the nuclear field and ask other nukes questions.</p>
+  <h3 class="center" id="known">What should be known?</h3>
+  <p>Nuclear engineering undergrads should have learned the basics of engineering in the first 4 semesters at PSU.  No nuclear classes are offered until junior year, but coming in with the knowledge of nuclear reactions, reactors, etc., would be a good idea. </p>
+  <h3 class="center" id="organization">Organization</h3>
+  <p>This internet resource guide is organized for easy access to multiple resources.  The table of contents is the best way to find what is sought after.  </p>
+   <h3 class="center" id="tips">User Tips</h3>
+  <p>This internet resource guide is organized for easy access to multiple resources.  The table of contents is the best way to find what is sought after.  </p>
+</div>
+
+
+<!-- Footer -->
+<footer class="center black padding-64 opacity hover-opacity-off">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+</footer>
+ 
+</body>
+</html>
